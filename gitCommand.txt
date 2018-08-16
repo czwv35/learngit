@@ -1,0 +1,19 @@
+git  init 初始化版本库
+
+git add 添加至暂存区
+git commit -m "注释" 提交代码
+
+git status 查看现在git状态
+git log 查看提交记录
+git reflog  查看回退记录
+git diff  text.txt 查看修改记录
+
+1. 丢弃工作区的修改，  git checkout -- test.txt
+2. 丢弃暂存区的修改，  git reset HEAD test.txt
+3. 版本回退				  ，  git reset -- hard commitId(HEAD代表最新的，HEAD^代表上个版本，HEAD^^代表上上个版本)
+
+
+关联远程仓库
+git remote add origin git@github.com:czwv35/learngit.git
+第一次同步都远程仓库 git push -u origin master
+之后提交 git push origin master
